@@ -1,0 +1,21 @@
+create database assistenciatecnica ;
+
+use assistenciatecnica;
+
+create table if not exists `assistenciatecnica`.`Cliente` (
+      
+`idcliente` int(11) not null auto_increment,
+`nome` varchar(15) not null,
+`cpf`bigint(11) not null,
+`telefone`varchar(11) not null,
+primary key(`idcliente`)
+);
+create table if not exists `assistenciatecnica`.`dispositivo` (
+      
+`iddispositivo` int(11) not null auto_increment,
+`modelo` varchar(15) not null,
+`defeito` varchar(255) not null,
+`cliente`varchar(255) not null,
+`valorservico`bigint(11) not null,
+primary key(`iddispositivo`)
+);
