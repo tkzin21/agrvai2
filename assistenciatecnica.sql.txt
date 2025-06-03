@@ -19,3 +19,5 @@ create table if not exists `assistenciatecnica`.`dispositivo` (
 `valorservico`bigint(11) not null,
 primary key(`iddispositivo`)
 );
+
+desc assistenciatecnica;
